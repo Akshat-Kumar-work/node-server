@@ -12,7 +12,7 @@ phases:
 
       # Get AWS account ID and region dynamically
       - ACCOUNT_ID=$(aws sts get-caller-identity --query "Account" --output text)
-      - REGION=$(aws configure get region)
+      - REGION=ap-south-1
       - REPOSITORY_URI=${ACCOUNT_ID}.dkr.ecr.${REGION}.amazonaws.com/${ECR_REPO_NAME}
 
       # Log in to ECR securely
