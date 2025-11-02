@@ -13,9 +13,7 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-  console.log(`testing for github `)
-  console.log(`testing for fix `)
+  console.log(`Server running very fine on http://localhost:${PORT}`);
 
 });
 
